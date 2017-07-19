@@ -1,0 +1,36 @@
+Create
+mkdir testproject
+cd testproject
+git init
+
+Modify
+git add foo.txt (or git add .)
+git commit
+git mv
+git rm
+
+Inspect
+git log
+git status
+git diff
+git show (last Commit)
+
+Possible Workflow
+(this is just an example!)
+
+some editing
+git diff status - to see what files you changed
+git diff [files] - to see the changes
+git commit -a [-m <message>]
+
+Remote repositories
+c
+Copy repository
+git clone <repository>
+ * repository = URL (file, http, ssh, ...)
+ * creates a complete local copy of the repository
+ * links it to the remore repository (origin)(you cal also link to <repository> later)
+ 
+ RECEIVE CHANGES
+ git pull - Send Changes [git fetch git merge to inspect changes]
+ git push
